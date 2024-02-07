@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark|Portfolio</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+          <div class="header-nav">
+            <a href="#!" class="logo"><span class="logo-span">My</span> Portfolio</a>
+            <nav id="nav" class="nav">
+              <ul class="nav-list">
+                <li class="nav-item">
+                  <a href="#introduction-container" class="nav-link">About</a>
+                </li>
+  
+                <li class="nav-item">
+                  <a href="#work-experince__container" class="nav-link">Works</a>
+                </li>
+  
+                <li class="nav-item">
+                  <a href="#contact" class="nav-link">Contact</a>
+                </li>
+              </ul>
+              <button id="nav-btn" class="nav-button">
+                <img id="nav-btn-img" src="img/nav-open.svg" alt="Nav button" />
+              </button>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <div id="particles-js"></div>
+      <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+      <main class="main">
+        <section class="main-container">
+          <h1>Hi, I'm <span class="my-name">Mark</span></h1>
+          <h2>Front-end Developer</h2>
+        </section>
+
+        <section class="introduction-container" id="introduction-container">
+          <div class="overview">
+            <h1>Introduction</h1>
+            <h2>About me</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Pariatur soluta officia similique nam alias recusandae, eius ipsam optio, 
+              nesciunt fugiat corrupti consequatur quis. Laudantium hic quod sed quos doloribus eveniet?
+            </p>
+            <div class="your-stack">
+              <img src="img/react-js-icon.svg" alt="icon" id="react-icon">
+              <p>React Developer</p>
+            </div>
+            <div class="your-stack">
+              <img src="img/pngfind.com-html5-logo-png-5977496.png" alt="icon" id="web-developer__icon">
+              <p>Web Developer</p>
+            </div>
+          </div>
+        </section>
+        
+        <section class="work-experince__container" id="work-experince__container">
+          <div class="work-experince__container2">
+            <h1>Work experience</h1>
+            <div class="work-experince__box">
+              <h2>Central Bank</h2>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                In nulla cupiditate repellat aut maxime voluptatibus illum explicabo voluptates? 
+                Porro nam incidunt harum quam nulla sapiente obcaecati soluta iure tempora dolorum?</p>
+            </div>
+            <p class="line"></p>
+            <div class="work-experince__box2">
+              <h2>Walmart</h2>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum repellat delectus, similique atque perspiciatis aliquam. Dolorem blanditiis labore quod mollitia voluptas quos tempore, ipsam culpa. Libero nulla ab quo inventore?</p>
+            </div>
+            <div class="work-experince__box3">
+              <h2>City centre</h2>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas deleniti porro, molestias repellendus laboriosam pariatur quis odio asperiores perferendis error molestiae officia tempore? Tempora in dignissimos, nisi labore delectus rem.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="projects" id="projects">
+          <div class="projects-container">
+            <h3>Projects</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro incidunt eaque praesentium soluta sunt ipsa perferendis, a temporibus voluptas corporis. Magnam corrupti necessitatibus illum quaerat est veniam accusamus nesciunt sint.</p>
+          </div>
+
+          <div class="projects-container__box">
+            <img src="img/pexels-fauxels-3183153.jpg" alt="image">
+            <div class="projects-container__description">
+              <h3>Studio website</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit....</p>
+          </div>
+          </div>
+         
+          <div class="projects-container__box" id="projects-container__box2">
+            <img src="img/pexels-fauxels-3183197.jpg" alt="image">
+            <div class="projects-container__description">
+              <h3>Project management</h3>b 
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit....</p>
+          </div>
+          </div>
+        </section>
+
+        <section class="contact" id="contact">
+          <div class="contact-container">
+            <h4>Contact Me</h4>
+            <form>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" required></textarea>
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+          <div class="animated-world">
+            <img src="img/7-2-earth-png-pic.png" alt="image">
+          </div>
+          <div id="particles-js-contact"></div>
+        </section>
+      </main>
+      <script src="script.js"></script>
+</body>
+</html>

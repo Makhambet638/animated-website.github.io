@@ -1,0 +1,120 @@
+@import 'colors';
+@import 'media-queries';
+
+%display-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    
+}
+.header {
+    padding-top: 46px;
+    background-color: rgba(0, 0, 0, 0.562);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+    
+
+    .container {
+        max-width: 1230px;
+        padding: 0 30px;
+        margin:0 auto;
+    }
+    .header-nav {
+        @extend %display-flex;
+    }
+    .logo {
+        position: relative;
+        padding: 0 12px 3px 0;
+        text-decoration: none;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 1;
+        color: $black;
+        margin-bottom: 35px;
+        color: white;
+    }
+    .logo-span{
+        color: blue;
+    }
+    .title-1 {
+        font-size: 34px;
+        font-weight: 600;
+    }
+    .nav-list {
+        display: flex;
+        column-gap: 50px;
+        font-weight: 500;
+        font-size: 14px;
+        margin-bottom: 35px;
+        @include  tablet-and__laptops{
+            display: none;
+        }
+    }
+    .nav-button {
+        display: none;
+        @include tablet-and__laptops{
+            display: block;
+            position: fixed;
+            z-index: 7;
+            top: 46px;
+            right: 30px;
+            background:none;
+            border: none;
+        }
+    }
+    .nav.open .nav-list{
+        @include  tablet-and__laptops{
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: black;
+            z-index: 1;
+            padding: 100px 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 60px;
+            font-size: 34px;
+            font-weight: 600px;
+            transition: .100s;
+            height: 100%;
+        }
+        .nav-item::after{
+            margin-top: 20px;
+        }
+    }
+    .nav-item {
+        list-style: none;
+        position: relative;
+    }
+    .nav-link {
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+    }
+    .nav-item::after{
+        content: '';
+        position: absolute;
+        top: 30px;
+        bottom: 5px;
+        width: 0;
+        height: 3px;
+        left: 50%;
+        background: #00bfff;
+        transform: translateX(-50%);
+        transition: .3s;
+    }
+    .nav-link:hover{
+        color: #00bfff;
+        transition: .1s ease-in-out;
+    }
+    .nav-item:hover::after{
+        width: 100%;
+    }
+}
+
