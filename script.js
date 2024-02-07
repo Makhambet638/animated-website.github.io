@@ -135,29 +135,27 @@ particlesJS('particles-js', {
     retina_detect: true
 });
 
-// script.js
 
-// Dynamically load the Particles.js library
 var particlesScript = document.createElement('script');
 particlesScript.src = 'https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js';
 document.head.appendChild(particlesScript);
 
-// Function to initialize Particles.js for the contact section
+
 function initializeParticles() {
     particlesJS('particles-js-contact', {
         "particles": {
             "number": {
-                "value": 100, // Increase the number of particles for a denser star field
+                "value": 100,
                 "density": {
                     "enable": true,
                     "value_area": 800
                 }
             },
             "color": {
-                "value": "#ffffff" // Set the color of the stars to white
+                "value": "#ffffff"
             },
             "shape": {
-                "type": "star" // Set the shape of the particles to star
+                "type": "star"
             },
             "opacity": {
                 "value": 0.5,
@@ -167,14 +165,14 @@ function initializeParticles() {
                 }
             },
             "size": {
-                "value": 2 // Adjust the size of the stars
+                "value": 2 
             },
             "line_linked": {
                 "enable": false
             },
             "move": {
                 "enable": true,
-                "speed": 0.5, // Adjust the speed of the movement
+                "speed": 0.5,
                 "direction": "none",
                 "random": true,
                 "straight": false,
@@ -192,5 +190,4 @@ function initializeParticles() {
     });
 }
 
-// Call the function to initialize Particles.js
 initializeParticles();
