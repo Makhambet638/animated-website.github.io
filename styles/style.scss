@@ -12,7 +12,7 @@ body {
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
     background-repeat: no-repeat;
-    background-size: cover; /* Ensure the background image covers the entire viewport */
+    background-size: cover;
     background-position: center;
 }
 
@@ -141,8 +141,8 @@ body {
 }
 .line {
     margin-left: 600px;
-    border-left: 1px solid white; /* Adjust color, width, and style as needed */
-    height: 500px; /* Adjust height as needed */
+    border-left: 1px solid white;
+    height: 500px;
     @include tablet-and__laptops{
         display: none;
     }
