@@ -14,11 +14,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-<<<<<<< HEAD
     background-color: rgba(0,0,0,0.9);
-=======
-    background-color: rgba(0,0,0, 0.9)
->>>>>>> fecd122148efecbce4c54123aca27dbcec5471a7
 }
 
 #particles-js {
@@ -307,7 +303,6 @@ body {
         display: none;
     }
 }
-
 .animated-world img {
     position: relative;
     top: 0;
@@ -318,7 +313,6 @@ body {
     width: 400px;
     height: 400px;
 }
-
 @keyframes jumpAndSpin {
     0% {
         transform: translateY(0) rotate(0deg);
@@ -330,8 +324,6 @@ body {
         transform: translateY(0) rotate(0deg);
     }
 }
-
-
 #particles-js-contact{
     margin-top: -500px;
 }
